@@ -1,0 +1,30 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input
+        name="userInput"
+        id="userInput"
+        type="text"
+        placeholder="username"
+        class="form-control"
+        [(ngModel)]="user"
+      />
+
+      <div class="">
+        <select
+          name="roomInput"
+          id="roomInput"
+          class="form-control"
+          [(ngModel)]="room"
+        >
+          <option value="undefined">Please select Room</option>
+          <option value="German">German</option>
+          <option value="English">English</option>
+          <option value="French">French</option>
+        </select>
+      </div>
+      <br />
+      <button id="join-button" (click)="joinRoomAction()">Join</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,124 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 75%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select.form-control {
+  height: 34px;
+}
+
+.btn-leave1 {
+  background: url("/angularChatApp/src/assets/icons8-logout-48.png") no-repeat
+    left center;
+  padding-left: 20px;
+}
+
+.msg-inbox {
+  margin-top: 20px;
+}
+
+.input-group {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="text"].form-control {
+  height: 34px;
+  background-color: rgb(222, 227, 238);
+}
+
+.send-btn {
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #859dea;
+  color: #fff;
+  cursor: pointer;
+  width: 20%;
+  height: 50px;
+  margin-left: 15px;
+}
+.chat-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  color: rgb(110, 96, 239);
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  overflow: hidden;
+  justify-content: space-around;
+
+  padding: 15px;
+  background-color: rgb(228, 244, 244);
+}
+.chat-container-user {
+  width: 16%;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0px 10px 10px 0px;
+  line-height: 2;
+  color: #2c06c5;
+  background-color: rgb(159, 236, 236);
+  text-align: center;
+}
+
+.chat-container-group {
+  padding: 15px;
+  overflow-y: auto;
+  width: 75%;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(53, 56, 71);
+  background-color: rgb(159, 236, 236);
+}
+
+.img-logout {
+  cursor: pointer;
+  margin-top: 12px;
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+
+  border-radius: 10px;
+}

@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="chat-header">
+    <h2>
+      Welcome to
+      <span
+        ><b>{{ userRoomParam.roomParam }}</b></span
+      >
+      chat room
+    </h2>
+  </div>
+  <div class="chat-header">
+    <h2>
+      <span
+        ><b>User: {{ userRoomParam.userParam }}</b></span
+      >
+    </h2>
+
+    <a (click)="leaveRoom()"
+      ><img class="img-logout" src="/assets/icons8-logout-48.png"
+    /></a>
+  </div>
+</div>
+
+<div class="chat-container">
+  <div class="chat-container-group">
+    <div *ngFor="let item of messageArray">
+      <span
+        ><strong>{{ item.user }} : </strong> {{ item.message }}</span
+      >
+    </div>
+  </div>
+
+  <div class="chat-container-user">
+    <div *ngFor="let item of userArray">
+      <span
+        ><strong>{{ item }} </strong>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="msg-inbox">
+  <div class="input-group">
+    <input type="text" class="form-control" [(ngModel)]="messageText" />
+    <button type="button" class="send-btn" (click)="sendMessage()">Send</button>
+  </div>
+</div>
