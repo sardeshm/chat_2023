@@ -33,3 +33,18 @@ git clone
    
 
 
+##TODOs and HINTs
+
+- One To One Chat
+- Add CSS Library Angular Material
+- State maintain after browser refresh
+- Status of user can be seen active or inactive
+- One test wrote for join-chat component will add one for service
+
+## TIME SPAN
+Websocket tutorial: 2 hrs
+Project setup: 3hrs
+Server logic: approx. 4 hrs
+Frontend logic: 6 hrs
+Git Problems: 4 hrs
+CSS: 1 hrs
